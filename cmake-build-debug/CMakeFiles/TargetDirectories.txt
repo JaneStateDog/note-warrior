@@ -1,3 +1,0 @@
-C:/Projects/note-warrior/cmake-build-debug/CMakeFiles/note-warrior.dir
-C:/Projects/note-warrior/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Projects/note-warrior/cmake-build-debug/CMakeFiles/rebuild_cache.dir
