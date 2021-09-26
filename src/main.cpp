@@ -1,37 +1,41 @@
 #include "main.h"
 
 
-int main() {
-    winSize = {800, 450};
-    octagon = Octagon({winSize.x / 2.f, winSize.y / 2.f}, 128, 8);
+Vector2 winSize = {800, 450};
 
+
+States::states state = States::MainMenu;
+
+MainMenu mainMenu;
+Game game(winSize);
+
+
+int main() {
     InitWindow((int)winSize.x, (int)winSize.y, "note-warrior");
     SetTargetFPS(30);
-    Loop();
-    CloseWindow();
 
-
-    return 0;
-}
-
-
-void Loop() {
     while (!WindowShouldClose()) {
-        Update();
-        Render();
+        Controls::Update();
+
+        switch (state) {
+            case States::MainMenu:
+                mainMenu.Update();
+                mainMenu.Render();
+
+                break;
+
+            case States::Game:
+                game.Update();
+                game.Render();
+
+                break;
+
+            case States::Editor:
+
+                break;
+        }
     }
-}
 
-
-void Update() {
-    octagon.Update();
-}
-
-void Render() {
-    BeginDrawing();
-    ClearBackground(BLACK);
-
-    octagon.Render();
-
-    EndDrawing();
+    CloseWindow();
+    return 0;
 }

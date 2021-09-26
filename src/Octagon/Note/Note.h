@@ -3,8 +3,8 @@
 
 #include "raylib.h"
 
-#include "../Functions.h"
-#include "../Octagon/Octagon.h"
+#include "../../Functions/Functions.h"
+#include "../Octagon.h"
 
 
 class Octagon;

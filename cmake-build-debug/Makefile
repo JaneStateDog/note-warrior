@@ -128,53 +128,125 @@ note-warrior/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/build
 .PHONY : note-warrior/fast
 
-src/Functions.obj: src/Functions.cpp.obj
-.PHONY : src/Functions.obj
+src/ControlsController/ControlsController.obj: src/ControlsController/ControlsController.cpp.obj
+.PHONY : src/ControlsController/ControlsController.obj
 
 # target to build an object file
-src/Functions.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Functions.cpp.obj
-.PHONY : src/Functions.cpp.obj
+src/ControlsController/ControlsController.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/ControlsController/ControlsController.cpp.obj
+.PHONY : src/ControlsController/ControlsController.cpp.obj
 
-src/Functions.i: src/Functions.cpp.i
-.PHONY : src/Functions.i
+src/ControlsController/ControlsController.i: src/ControlsController/ControlsController.cpp.i
+.PHONY : src/ControlsController/ControlsController.i
 
 # target to preprocess a source file
-src/Functions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Functions.cpp.i
-.PHONY : src/Functions.cpp.i
+src/ControlsController/ControlsController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/ControlsController/ControlsController.cpp.i
+.PHONY : src/ControlsController/ControlsController.cpp.i
 
-src/Functions.s: src/Functions.cpp.s
-.PHONY : src/Functions.s
+src/ControlsController/ControlsController.s: src/ControlsController/ControlsController.cpp.s
+.PHONY : src/ControlsController/ControlsController.s
 
 # target to generate assembly for a file
-src/Functions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Functions.cpp.s
-.PHONY : src/Functions.cpp.s
+src/ControlsController/ControlsController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/ControlsController/ControlsController.cpp.s
+.PHONY : src/ControlsController/ControlsController.cpp.s
 
-src/Note/Note.obj: src/Note/Note.cpp.obj
-.PHONY : src/Note/Note.obj
+src/Functions/Functions.obj: src/Functions/Functions.cpp.obj
+.PHONY : src/Functions/Functions.obj
 
 # target to build an object file
-src/Note/Note.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Note/Note.cpp.obj
-.PHONY : src/Note/Note.cpp.obj
+src/Functions/Functions.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.obj
+.PHONY : src/Functions/Functions.cpp.obj
 
-src/Note/Note.i: src/Note/Note.cpp.i
-.PHONY : src/Note/Note.i
+src/Functions/Functions.i: src/Functions/Functions.cpp.i
+.PHONY : src/Functions/Functions.i
 
 # target to preprocess a source file
-src/Note/Note.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Note/Note.cpp.i
-.PHONY : src/Note/Note.cpp.i
+src/Functions/Functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.i
+.PHONY : src/Functions/Functions.cpp.i
 
-src/Note/Note.s: src/Note/Note.cpp.s
-.PHONY : src/Note/Note.s
+src/Functions/Functions.s: src/Functions/Functions.cpp.s
+.PHONY : src/Functions/Functions.s
 
 # target to generate assembly for a file
-src/Note/Note.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Note/Note.cpp.s
-.PHONY : src/Note/Note.cpp.s
+src/Functions/Functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.s
+.PHONY : src/Functions/Functions.cpp.s
+
+src/Game/Game.obj: src/Game/Game.cpp.obj
+.PHONY : src/Game/Game.obj
+
+# target to build an object file
+src/Game/Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Game/Game.cpp.obj
+.PHONY : src/Game/Game.cpp.obj
+
+src/Game/Game.i: src/Game/Game.cpp.i
+.PHONY : src/Game/Game.i
+
+# target to preprocess a source file
+src/Game/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Game/Game.cpp.i
+.PHONY : src/Game/Game.cpp.i
+
+src/Game/Game.s: src/Game/Game.cpp.s
+.PHONY : src/Game/Game.s
+
+# target to generate assembly for a file
+src/Game/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Game/Game.cpp.s
+.PHONY : src/Game/Game.cpp.s
+
+src/MainMenu/MainMenu.obj: src/MainMenu/MainMenu.cpp.obj
+.PHONY : src/MainMenu/MainMenu.obj
+
+# target to build an object file
+src/MainMenu/MainMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.obj
+.PHONY : src/MainMenu/MainMenu.cpp.obj
+
+src/MainMenu/MainMenu.i: src/MainMenu/MainMenu.cpp.i
+.PHONY : src/MainMenu/MainMenu.i
+
+# target to preprocess a source file
+src/MainMenu/MainMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.i
+.PHONY : src/MainMenu/MainMenu.cpp.i
+
+src/MainMenu/MainMenu.s: src/MainMenu/MainMenu.cpp.s
+.PHONY : src/MainMenu/MainMenu.s
+
+# target to generate assembly for a file
+src/MainMenu/MainMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.s
+.PHONY : src/MainMenu/MainMenu.cpp.s
+
+src/Octagon/Note/Note.obj: src/Octagon/Note/Note.cpp.obj
+.PHONY : src/Octagon/Note/Note.obj
+
+# target to build an object file
+src/Octagon/Note/Note.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.obj
+.PHONY : src/Octagon/Note/Note.cpp.obj
+
+src/Octagon/Note/Note.i: src/Octagon/Note/Note.cpp.i
+.PHONY : src/Octagon/Note/Note.i
+
+# target to preprocess a source file
+src/Octagon/Note/Note.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.i
+.PHONY : src/Octagon/Note/Note.cpp.i
+
+src/Octagon/Note/Note.s: src/Octagon/Note/Note.cpp.s
+.PHONY : src/Octagon/Note/Note.s
+
+# target to generate assembly for a file
+src/Octagon/Note/Note.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.s
+.PHONY : src/Octagon/Note/Note.cpp.s
 
 src/Octagon/Octagon.obj: src/Octagon/Octagon.cpp.obj
 .PHONY : src/Octagon/Octagon.obj
@@ -233,12 +305,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... note-warrior
-	@echo ... src/Functions.obj
-	@echo ... src/Functions.i
-	@echo ... src/Functions.s
-	@echo ... src/Note/Note.obj
-	@echo ... src/Note/Note.i
-	@echo ... src/Note/Note.s
+	@echo ... src/ControlsController/ControlsController.obj
+	@echo ... src/ControlsController/ControlsController.i
+	@echo ... src/ControlsController/ControlsController.s
+	@echo ... src/Functions/Functions.obj
+	@echo ... src/Functions/Functions.i
+	@echo ... src/Functions/Functions.s
+	@echo ... src/Game/Game.obj
+	@echo ... src/Game/Game.i
+	@echo ... src/Game/Game.s
+	@echo ... src/MainMenu/MainMenu.obj
+	@echo ... src/MainMenu/MainMenu.i
+	@echo ... src/MainMenu/MainMenu.s
+	@echo ... src/Octagon/Note/Note.obj
+	@echo ... src/Octagon/Note/Note.i
+	@echo ... src/Octagon/Note/Note.s
 	@echo ... src/Octagon/Octagon.obj
 	@echo ... src/Octagon/Octagon.i
 	@echo ... src/Octagon/Octagon.s

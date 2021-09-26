@@ -4,8 +4,9 @@
 #include "raylib.h"
 #include <vector>
 
-#include "../Functions.h"
-#include "../Note/Note.h"
+#include "../Functions/Functions.h"
+#include "../ControlsController/ControlsController.h"
+#include "Note/Note.h"
 
 
 class Note;
@@ -18,12 +19,7 @@ private:
     int sides;
     int selSide = 0;
 
-    int move = 0;
-
-
-    //Bad dev variables
-    int choosenSide;
-    int make;
+    bool moveFlipper = false;
 
 public:
     std::vector<Note> notes;

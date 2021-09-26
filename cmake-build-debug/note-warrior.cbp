@@ -84,16 +84,34 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Projects/note-warrior/src/Functions.cpp">
+		<Unit filename="C:/Projects/note-warrior/src/ControlsController/ControlsController.cpp">
 			<Option target="note-warrior"/>
 		</Unit>
-		<Unit filename="C:/Projects/note-warrior/src/Functions.h">
+		<Unit filename="C:/Projects/note-warrior/src/ControlsController/ControlsController.h">
 			<Option target="note-warrior"/>
 		</Unit>
-		<Unit filename="C:/Projects/note-warrior/src/Note/Note.cpp">
+		<Unit filename="C:/Projects/note-warrior/src/Functions/Functions.cpp">
 			<Option target="note-warrior"/>
 		</Unit>
-		<Unit filename="C:/Projects/note-warrior/src/Note/Note.h">
+		<Unit filename="C:/Projects/note-warrior/src/Functions/Functions.h">
+			<Option target="note-warrior"/>
+		</Unit>
+		<Unit filename="C:/Projects/note-warrior/src/Game/Game.cpp">
+			<Option target="note-warrior"/>
+		</Unit>
+		<Unit filename="C:/Projects/note-warrior/src/Game/Game.h">
+			<Option target="note-warrior"/>
+		</Unit>
+		<Unit filename="C:/Projects/note-warrior/src/MainMenu/MainMenu.cpp">
+			<Option target="note-warrior"/>
+		</Unit>
+		<Unit filename="C:/Projects/note-warrior/src/MainMenu/MainMenu.h">
+			<Option target="note-warrior"/>
+		</Unit>
+		<Unit filename="C:/Projects/note-warrior/src/Octagon/Note/Note.cpp">
+			<Option target="note-warrior"/>
+		</Unit>
+		<Unit filename="C:/Projects/note-warrior/src/Octagon/Note/Note.h">
 			<Option target="note-warrior"/>
 		</Unit>
 		<Unit filename="C:/Projects/note-warrior/src/Octagon/Octagon.cpp">

@@ -13,34 +13,20 @@ int Octagon::GetSides() const { return sides; }
 
 
 void Octagon::Update() {
-    if (move == 1) {
-        if (IsKeyDown(KEY_A) || IsKeyDown(KEY_D)) { move++; }
-    } else if (move >= 2) {
-        if (IsKeyDown(KEY_A)) { selSide--; }
-        else if (IsKeyDown(KEY_D)) { selSide++; }
+    if (moveFlipper) {
+        if (Controls::KeyLeft) { selSide--; }
+        else if (Controls::KeyRight) { selSide++; }
 
-        move = 0;
-    } else {
-        if (IsKeyPressed(KEY_A)) { selSide--; }
-        else if (IsKeyPressed(KEY_D)) { selSide++; }
-
-        move = 1;
-    }
+        moveFlipper = false;
+    } else { moveFlipper = true; }
 
     if (selSide < 0) { selSide = sides - 1; }
     else if (selSide > sides - 1) { selSide = 0; }
 
 
 
-    //Create notes poorly
-    if (make >= 8) {
-        notes.emplace_back(choosenSide, size, this);
-
-        make = 0;
-        choosenSide++;
-
-        if (choosenSide >= sides) { choosenSide = 0; }
-    } else { make++; }
+    //This creates a note
+    //notes.emplace_back(0, 10, this);
 
     //Update notes
     for (auto & note : notes) {

@@ -93,54 +93,102 @@ CMakeFiles/note-warrior.dir/src/Octagon/Octagon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/note-warrior.dir/src/Octagon/Octagon.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\note-warrior\src\Octagon\Octagon.cpp -o CMakeFiles\note-warrior.dir\src\Octagon\Octagon.cpp.s
 
-CMakeFiles/note-warrior.dir/src/Functions.cpp.obj: CMakeFiles/note-warrior.dir/flags.make
-CMakeFiles/note-warrior.dir/src/Functions.cpp.obj: CMakeFiles/note-warrior.dir/includes_CXX.rsp
-CMakeFiles/note-warrior.dir/src/Functions.cpp.obj: ../src/Functions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\note-warrior\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/note-warrior.dir/src/Functions.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\note-warrior.dir\src\Functions.cpp.obj -c C:\Projects\note-warrior\src\Functions.cpp
+CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.obj: CMakeFiles/note-warrior.dir/flags.make
+CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.obj: CMakeFiles/note-warrior.dir/includes_CXX.rsp
+CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.obj: ../src/Functions/Functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\note-warrior\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\note-warrior.dir\src\Functions\Functions.cpp.obj -c C:\Projects\note-warrior\src\Functions\Functions.cpp
 
-CMakeFiles/note-warrior.dir/src/Functions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/note-warrior.dir/src/Functions.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projects\note-warrior\src\Functions.cpp > CMakeFiles\note-warrior.dir\src\Functions.cpp.i
+CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projects\note-warrior\src\Functions\Functions.cpp > CMakeFiles\note-warrior.dir\src\Functions\Functions.cpp.i
 
-CMakeFiles/note-warrior.dir/src/Functions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/note-warrior.dir/src/Functions.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\note-warrior\src\Functions.cpp -o CMakeFiles\note-warrior.dir\src\Functions.cpp.s
+CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\note-warrior\src\Functions\Functions.cpp -o CMakeFiles\note-warrior.dir\src\Functions\Functions.cpp.s
 
-CMakeFiles/note-warrior.dir/src/Note/Note.cpp.obj: CMakeFiles/note-warrior.dir/flags.make
-CMakeFiles/note-warrior.dir/src/Note/Note.cpp.obj: CMakeFiles/note-warrior.dir/includes_CXX.rsp
-CMakeFiles/note-warrior.dir/src/Note/Note.cpp.obj: ../src/Note/Note.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\note-warrior\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/note-warrior.dir/src/Note/Note.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\note-warrior.dir\src\Note\Note.cpp.obj -c C:\Projects\note-warrior\src\Note\Note.cpp
+CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.obj: CMakeFiles/note-warrior.dir/flags.make
+CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.obj: CMakeFiles/note-warrior.dir/includes_CXX.rsp
+CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.obj: ../src/Octagon/Note/Note.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\note-warrior\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\note-warrior.dir\src\Octagon\Note\Note.cpp.obj -c C:\Projects\note-warrior\src\Octagon\Note\Note.cpp
 
-CMakeFiles/note-warrior.dir/src/Note/Note.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/note-warrior.dir/src/Note/Note.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projects\note-warrior\src\Note\Note.cpp > CMakeFiles\note-warrior.dir\src\Note\Note.cpp.i
+CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projects\note-warrior\src\Octagon\Note\Note.cpp > CMakeFiles\note-warrior.dir\src\Octagon\Note\Note.cpp.i
 
-CMakeFiles/note-warrior.dir/src/Note/Note.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/note-warrior.dir/src/Note/Note.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\note-warrior\src\Note\Note.cpp -o CMakeFiles\note-warrior.dir\src\Note\Note.cpp.s
+CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\note-warrior\src\Octagon\Note\Note.cpp -o CMakeFiles\note-warrior.dir\src\Octagon\Note\Note.cpp.s
+
+CMakeFiles/note-warrior.dir/src/Game/Game.cpp.obj: CMakeFiles/note-warrior.dir/flags.make
+CMakeFiles/note-warrior.dir/src/Game/Game.cpp.obj: CMakeFiles/note-warrior.dir/includes_CXX.rsp
+CMakeFiles/note-warrior.dir/src/Game/Game.cpp.obj: ../src/Game/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\note-warrior\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/note-warrior.dir/src/Game/Game.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\note-warrior.dir\src\Game\Game.cpp.obj -c C:\Projects\note-warrior\src\Game\Game.cpp
+
+CMakeFiles/note-warrior.dir/src/Game/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/note-warrior.dir/src/Game/Game.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projects\note-warrior\src\Game\Game.cpp > CMakeFiles\note-warrior.dir\src\Game\Game.cpp.i
+
+CMakeFiles/note-warrior.dir/src/Game/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/note-warrior.dir/src/Game/Game.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\note-warrior\src\Game\Game.cpp -o CMakeFiles\note-warrior.dir\src\Game\Game.cpp.s
+
+CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.obj: CMakeFiles/note-warrior.dir/flags.make
+CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.obj: CMakeFiles/note-warrior.dir/includes_CXX.rsp
+CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.obj: ../src/MainMenu/MainMenu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\note-warrior\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\note-warrior.dir\src\MainMenu\MainMenu.cpp.obj -c C:\Projects\note-warrior\src\MainMenu\MainMenu.cpp
+
+CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projects\note-warrior\src\MainMenu\MainMenu.cpp > CMakeFiles\note-warrior.dir\src\MainMenu\MainMenu.cpp.i
+
+CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\note-warrior\src\MainMenu\MainMenu.cpp -o CMakeFiles\note-warrior.dir\src\MainMenu\MainMenu.cpp.s
+
+CMakeFiles/note-warrior.dir/src/ControlsController/ControlsController.cpp.obj: CMakeFiles/note-warrior.dir/flags.make
+CMakeFiles/note-warrior.dir/src/ControlsController/ControlsController.cpp.obj: CMakeFiles/note-warrior.dir/includes_CXX.rsp
+CMakeFiles/note-warrior.dir/src/ControlsController/ControlsController.cpp.obj: ../src/ControlsController/ControlsController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Projects\note-warrior\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/note-warrior.dir/src/ControlsController/ControlsController.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\note-warrior.dir\src\ControlsController\ControlsController.cpp.obj -c C:\Projects\note-warrior\src\ControlsController\ControlsController.cpp
+
+CMakeFiles/note-warrior.dir/src/ControlsController/ControlsController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/note-warrior.dir/src/ControlsController/ControlsController.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projects\note-warrior\src\ControlsController\ControlsController.cpp > CMakeFiles\note-warrior.dir\src\ControlsController\ControlsController.cpp.i
+
+CMakeFiles/note-warrior.dir/src/ControlsController/ControlsController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/note-warrior.dir/src/ControlsController/ControlsController.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\note-warrior\src\ControlsController\ControlsController.cpp -o CMakeFiles\note-warrior.dir\src\ControlsController\ControlsController.cpp.s
 
 # Object files for target note-warrior
 note__warrior_OBJECTS = \
 "CMakeFiles/note-warrior.dir/src/main.cpp.obj" \
 "CMakeFiles/note-warrior.dir/src/Octagon/Octagon.cpp.obj" \
-"CMakeFiles/note-warrior.dir/src/Functions.cpp.obj" \
-"CMakeFiles/note-warrior.dir/src/Note/Note.cpp.obj"
+"CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.obj" \
+"CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.obj" \
+"CMakeFiles/note-warrior.dir/src/Game/Game.cpp.obj" \
+"CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.obj" \
+"CMakeFiles/note-warrior.dir/src/ControlsController/ControlsController.cpp.obj"
 
 # External object files for target note-warrior
 note__warrior_EXTERNAL_OBJECTS =
 
 note-warrior.exe: CMakeFiles/note-warrior.dir/src/main.cpp.obj
 note-warrior.exe: CMakeFiles/note-warrior.dir/src/Octagon/Octagon.cpp.obj
-note-warrior.exe: CMakeFiles/note-warrior.dir/src/Functions.cpp.obj
-note-warrior.exe: CMakeFiles/note-warrior.dir/src/Note/Note.cpp.obj
+note-warrior.exe: CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.obj
+note-warrior.exe: CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.obj
+note-warrior.exe: CMakeFiles/note-warrior.dir/src/Game/Game.cpp.obj
+note-warrior.exe: CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.obj
+note-warrior.exe: CMakeFiles/note-warrior.dir/src/ControlsController/ControlsController.cpp.obj
 note-warrior.exe: CMakeFiles/note-warrior.dir/build.make
 note-warrior.exe: ../vcpkg/installed/x64-windows/debug/lib/raylib.lib
 note-warrior.exe: CMakeFiles/note-warrior.dir/linklibs.rsp
 note-warrior.exe: CMakeFiles/note-warrior.dir/objects1.rsp
 note-warrior.exe: CMakeFiles/note-warrior.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Projects\note-warrior\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable note-warrior.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Projects\note-warrior\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable note-warrior.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\note-warrior.dir\link.txt --verbose=$(VERBOSE)
 	C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Projects/note-warrior/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Projects/note-warrior/cmake-build-debug/note-warrior.exe -installedDir C:/Projects/note-warrior/vcpkg/installed/x64-windows/debug/bin -OutVariable out
 

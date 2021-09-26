@@ -2,21 +2,32 @@
 #define NOTE_WARRIOR_MAIN_H
 
 #include "raylib.h"
-#include <vector>
 
-#include "Functions.h"
-#include "Octagon/Octagon.h"
-
-
-Vector2 winSize;
-
-Octagon octagon;
+#include "ControlsController/ControlsController.h"
+#include "MainMenu/MainMenu.h"
+#include "Game/Game.h"
 
 
-void Loop();
+class MainMenu;
+class Game;
 
-void Update();
-void Render();
+
+extern Vector2 winSize;
+
+
+namespace States {
+    enum states {
+        MainMenu,
+        Game,
+        Editor
+    };
+}
+
+extern States::states state;
+
+
+extern MainMenu mainMenu;
+extern Game game;
 
 
 #endif //NOTE_WARRIOR_MAIN_H
