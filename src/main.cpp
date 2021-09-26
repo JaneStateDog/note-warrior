@@ -1,6 +1,7 @@
 #include "main.h"
 
 
+//Global variables
 Vector2 winSize = {800, 450};
 
 
