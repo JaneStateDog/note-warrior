@@ -4,8 +4,8 @@
 #include "raylib.h"
 
 #include "ControlsController/ControlsController.h"
-#include "MainMenu/MainMenu.h"
-#include "Game/Game.h"
+#include "States/MainMenu/MainMenu.h"
+#include "States/Game/Game.h"
 
 
 class MainMenu;

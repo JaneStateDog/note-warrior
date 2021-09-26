@@ -5,8 +5,8 @@
 #include <string>
 #include <vector>
 
-#include "../main.h"
-#include "../ControlsController/ControlsController.h"
+#include "../../main.h"
+#include "../../ControlsController/ControlsController.h"
 
 
 class MainMenu {

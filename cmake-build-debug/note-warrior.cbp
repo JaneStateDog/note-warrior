@@ -96,18 +96,6 @@
 		<Unit filename="C:/Projects/note-warrior/src/Functions/Functions.h">
 			<Option target="note-warrior"/>
 		</Unit>
-		<Unit filename="C:/Projects/note-warrior/src/Game/Game.cpp">
-			<Option target="note-warrior"/>
-		</Unit>
-		<Unit filename="C:/Projects/note-warrior/src/Game/Game.h">
-			<Option target="note-warrior"/>
-		</Unit>
-		<Unit filename="C:/Projects/note-warrior/src/MainMenu/MainMenu.cpp">
-			<Option target="note-warrior"/>
-		</Unit>
-		<Unit filename="C:/Projects/note-warrior/src/MainMenu/MainMenu.h">
-			<Option target="note-warrior"/>
-		</Unit>
 		<Unit filename="C:/Projects/note-warrior/src/Octagon/Note/Note.cpp">
 			<Option target="note-warrior"/>
 		</Unit>
@@ -118,6 +106,18 @@
 			<Option target="note-warrior"/>
 		</Unit>
 		<Unit filename="C:/Projects/note-warrior/src/Octagon/Octagon.h">
+			<Option target="note-warrior"/>
+		</Unit>
+		<Unit filename="C:/Projects/note-warrior/src/States/Game/Game.cpp">
+			<Option target="note-warrior"/>
+		</Unit>
+		<Unit filename="C:/Projects/note-warrior/src/States/Game/Game.h">
+			<Option target="note-warrior"/>
+		</Unit>
+		<Unit filename="C:/Projects/note-warrior/src/States/MainMenu/MainMenu.cpp">
+			<Option target="note-warrior"/>
+		</Unit>
+		<Unit filename="C:/Projects/note-warrior/src/States/MainMenu/MainMenu.h">
 			<Option target="note-warrior"/>
 		</Unit>
 		<Unit filename="C:/Projects/note-warrior/src/main.cpp">

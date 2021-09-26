@@ -176,54 +176,6 @@ src/Functions/Functions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.s
 .PHONY : src/Functions/Functions.cpp.s
 
-src/Game/Game.obj: src/Game/Game.cpp.obj
-.PHONY : src/Game/Game.obj
-
-# target to build an object file
-src/Game/Game.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Game/Game.cpp.obj
-.PHONY : src/Game/Game.cpp.obj
-
-src/Game/Game.i: src/Game/Game.cpp.i
-.PHONY : src/Game/Game.i
-
-# target to preprocess a source file
-src/Game/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Game/Game.cpp.i
-.PHONY : src/Game/Game.cpp.i
-
-src/Game/Game.s: src/Game/Game.cpp.s
-.PHONY : src/Game/Game.s
-
-# target to generate assembly for a file
-src/Game/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Game/Game.cpp.s
-.PHONY : src/Game/Game.cpp.s
-
-src/MainMenu/MainMenu.obj: src/MainMenu/MainMenu.cpp.obj
-.PHONY : src/MainMenu/MainMenu.obj
-
-# target to build an object file
-src/MainMenu/MainMenu.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.obj
-.PHONY : src/MainMenu/MainMenu.cpp.obj
-
-src/MainMenu/MainMenu.i: src/MainMenu/MainMenu.cpp.i
-.PHONY : src/MainMenu/MainMenu.i
-
-# target to preprocess a source file
-src/MainMenu/MainMenu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.i
-.PHONY : src/MainMenu/MainMenu.cpp.i
-
-src/MainMenu/MainMenu.s: src/MainMenu/MainMenu.cpp.s
-.PHONY : src/MainMenu/MainMenu.s
-
-# target to generate assembly for a file
-src/MainMenu/MainMenu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.s
-.PHONY : src/MainMenu/MainMenu.cpp.s
-
 src/Octagon/Note/Note.obj: src/Octagon/Note/Note.cpp.obj
 .PHONY : src/Octagon/Note/Note.obj
 
@@ -272,6 +224,54 @@ src/Octagon/Octagon.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/Octagon/Octagon.cpp.s
 .PHONY : src/Octagon/Octagon.cpp.s
 
+src/States/Game/Game.obj: src/States/Game/Game.cpp.obj
+.PHONY : src/States/Game/Game.obj
+
+# target to build an object file
+src/States/Game/Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/States/Game/Game.cpp.obj
+.PHONY : src/States/Game/Game.cpp.obj
+
+src/States/Game/Game.i: src/States/Game/Game.cpp.i
+.PHONY : src/States/Game/Game.i
+
+# target to preprocess a source file
+src/States/Game/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/States/Game/Game.cpp.i
+.PHONY : src/States/Game/Game.cpp.i
+
+src/States/Game/Game.s: src/States/Game/Game.cpp.s
+.PHONY : src/States/Game/Game.s
+
+# target to generate assembly for a file
+src/States/Game/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/States/Game/Game.cpp.s
+.PHONY : src/States/Game/Game.cpp.s
+
+src/States/MainMenu/MainMenu.obj: src/States/MainMenu/MainMenu.cpp.obj
+.PHONY : src/States/MainMenu/MainMenu.obj
+
+# target to build an object file
+src/States/MainMenu/MainMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/States/MainMenu/MainMenu.cpp.obj
+.PHONY : src/States/MainMenu/MainMenu.cpp.obj
+
+src/States/MainMenu/MainMenu.i: src/States/MainMenu/MainMenu.cpp.i
+.PHONY : src/States/MainMenu/MainMenu.i
+
+# target to preprocess a source file
+src/States/MainMenu/MainMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/States/MainMenu/MainMenu.cpp.i
+.PHONY : src/States/MainMenu/MainMenu.cpp.i
+
+src/States/MainMenu/MainMenu.s: src/States/MainMenu/MainMenu.cpp.s
+.PHONY : src/States/MainMenu/MainMenu.s
+
+# target to generate assembly for a file
+src/States/MainMenu/MainMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\note-warrior.dir\build.make CMakeFiles/note-warrior.dir/src/States/MainMenu/MainMenu.cpp.s
+.PHONY : src/States/MainMenu/MainMenu.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -311,18 +311,18 @@ help:
 	@echo ... src/Functions/Functions.obj
 	@echo ... src/Functions/Functions.i
 	@echo ... src/Functions/Functions.s
-	@echo ... src/Game/Game.obj
-	@echo ... src/Game/Game.i
-	@echo ... src/Game/Game.s
-	@echo ... src/MainMenu/MainMenu.obj
-	@echo ... src/MainMenu/MainMenu.i
-	@echo ... src/MainMenu/MainMenu.s
 	@echo ... src/Octagon/Note/Note.obj
 	@echo ... src/Octagon/Note/Note.i
 	@echo ... src/Octagon/Note/Note.s
 	@echo ... src/Octagon/Octagon.obj
 	@echo ... src/Octagon/Octagon.i
 	@echo ... src/Octagon/Octagon.s
+	@echo ... src/States/Game/Game.obj
+	@echo ... src/States/Game/Game.i
+	@echo ... src/States/Game/Game.s
+	@echo ... src/States/MainMenu/MainMenu.obj
+	@echo ... src/States/MainMenu/MainMenu.i
+	@echo ... src/States/MainMenu/MainMenu.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

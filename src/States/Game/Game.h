@@ -3,7 +3,7 @@
 
 #include "raylib.h"
 
-#include "../Octagon/Octagon.h"
+#include "../../Octagon/Octagon.h"
 
 
 class Game {

@@ -9,24 +9,6 @@ CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.obj: \
  ../vcpkg/installed/x64-windows/include/raylib.h \
  ../src/Functions/Functions.cpp \
  ../src/Functions/Functions.h
-CMakeFiles/note-warrior.dir/src/Game/Game.cpp.obj: \
- ../vcpkg/installed/x64-windows/include/raylib.h \
- ../src/ControlsController/ControlsController.h \
- ../src/Functions/Functions.h \
- ../src/Game/Game.cpp \
- ../src/Game/Game.h \
- ../src/Octagon/Note/Note.h \
- ../src/Octagon/Octagon.h
-CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.obj: \
- ../vcpkg/installed/x64-windows/include/raylib.h \
- ../src/ControlsController/ControlsController.h \
- ../src/Functions/Functions.h \
- ../src/Game/Game.h \
- ../src/MainMenu/MainMenu.cpp \
- ../src/MainMenu/MainMenu.h \
- ../src/Octagon/Note/Note.h \
- ../src/Octagon/Octagon.h \
- ../src/main.h
 CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.obj: \
  ../vcpkg/installed/x64-windows/include/raylib.h \
  ../src/ControlsController/ControlsController.h \
@@ -41,13 +23,31 @@ CMakeFiles/note-warrior.dir/src/Octagon/Octagon.cpp.obj: \
  ../src/Octagon/Note/Note.h \
  ../src/Octagon/Octagon.cpp \
  ../src/Octagon/Octagon.h
+CMakeFiles/note-warrior.dir/src/States/Game/Game.cpp.obj: \
+ ../vcpkg/installed/x64-windows/include/raylib.h \
+ ../src/ControlsController/ControlsController.h \
+ ../src/Functions/Functions.h \
+ ../src/Octagon/Note/Note.h \
+ ../src/Octagon/Octagon.h \
+ ../src/States/Game/Game.cpp \
+ ../src/States/Game/Game.h
+CMakeFiles/note-warrior.dir/src/States/MainMenu/MainMenu.cpp.obj: \
+ ../vcpkg/installed/x64-windows/include/raylib.h \
+ ../src/ControlsController/ControlsController.h \
+ ../src/Functions/Functions.h \
+ ../src/Octagon/Note/Note.h \
+ ../src/Octagon/Octagon.h \
+ ../src/States/Game/Game.h \
+ ../src/States/MainMenu/MainMenu.cpp \
+ ../src/States/MainMenu/MainMenu.h \
+ ../src/main.h
 CMakeFiles/note-warrior.dir/src/main.cpp.obj: \
  ../vcpkg/installed/x64-windows/include/raylib.h \
  ../src/ControlsController/ControlsController.h \
  ../src/Functions/Functions.h \
- ../src/Game/Game.h \
- ../src/MainMenu/MainMenu.h \
  ../src/Octagon/Note/Note.h \
  ../src/Octagon/Octagon.h \
+ ../src/States/Game/Game.h \
+ ../src/States/MainMenu/MainMenu.h \
  ../src/main.cpp \
  ../src/main.h

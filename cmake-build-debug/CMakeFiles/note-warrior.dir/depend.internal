@@ -9,24 +9,6 @@ CMakeFiles/note-warrior.dir/src/Functions/Functions.cpp.obj
  ../vcpkg/installed/x64-windows/include/raylib.h
  C:/Projects/note-warrior/src/Functions/Functions.cpp
  C:/Projects/note-warrior/src/Functions/Functions.h
-CMakeFiles/note-warrior.dir/src/Game/Game.cpp.obj
- ../vcpkg/installed/x64-windows/include/raylib.h
- C:/Projects/note-warrior/src/ControlsController/ControlsController.h
- C:/Projects/note-warrior/src/Functions/Functions.h
- C:/Projects/note-warrior/src/Game/Game.cpp
- C:/Projects/note-warrior/src/Game/Game.h
- C:/Projects/note-warrior/src/Octagon/Note/Note.h
- C:/Projects/note-warrior/src/Octagon/Octagon.h
-CMakeFiles/note-warrior.dir/src/MainMenu/MainMenu.cpp.obj
- ../vcpkg/installed/x64-windows/include/raylib.h
- C:/Projects/note-warrior/src/ControlsController/ControlsController.h
- C:/Projects/note-warrior/src/Functions/Functions.h
- C:/Projects/note-warrior/src/Game/Game.h
- C:/Projects/note-warrior/src/MainMenu/MainMenu.cpp
- C:/Projects/note-warrior/src/MainMenu/MainMenu.h
- C:/Projects/note-warrior/src/Octagon/Note/Note.h
- C:/Projects/note-warrior/src/Octagon/Octagon.h
- C:/Projects/note-warrior/src/main.h
 CMakeFiles/note-warrior.dir/src/Octagon/Note/Note.cpp.obj
  ../vcpkg/installed/x64-windows/include/raylib.h
  C:/Projects/note-warrior/src/ControlsController/ControlsController.h
@@ -41,13 +23,31 @@ CMakeFiles/note-warrior.dir/src/Octagon/Octagon.cpp.obj
  C:/Projects/note-warrior/src/Octagon/Note/Note.h
  C:/Projects/note-warrior/src/Octagon/Octagon.cpp
  C:/Projects/note-warrior/src/Octagon/Octagon.h
+CMakeFiles/note-warrior.dir/src/States/Game/Game.cpp.obj
+ ../vcpkg/installed/x64-windows/include/raylib.h
+ C:/Projects/note-warrior/src/ControlsController/ControlsController.h
+ C:/Projects/note-warrior/src/Functions/Functions.h
+ C:/Projects/note-warrior/src/Octagon/Note/Note.h
+ C:/Projects/note-warrior/src/Octagon/Octagon.h
+ C:/Projects/note-warrior/src/States/Game/Game.cpp
+ C:/Projects/note-warrior/src/States/Game/Game.h
+CMakeFiles/note-warrior.dir/src/States/MainMenu/MainMenu.cpp.obj
+ ../vcpkg/installed/x64-windows/include/raylib.h
+ C:/Projects/note-warrior/src/ControlsController/ControlsController.h
+ C:/Projects/note-warrior/src/Functions/Functions.h
+ C:/Projects/note-warrior/src/Octagon/Note/Note.h
+ C:/Projects/note-warrior/src/Octagon/Octagon.h
+ C:/Projects/note-warrior/src/States/Game/Game.h
+ C:/Projects/note-warrior/src/States/MainMenu/MainMenu.cpp
+ C:/Projects/note-warrior/src/States/MainMenu/MainMenu.h
+ C:/Projects/note-warrior/src/main.h
 CMakeFiles/note-warrior.dir/src/main.cpp.obj
  ../vcpkg/installed/x64-windows/include/raylib.h
  C:/Projects/note-warrior/src/ControlsController/ControlsController.h
  C:/Projects/note-warrior/src/Functions/Functions.h
- C:/Projects/note-warrior/src/Game/Game.h
- C:/Projects/note-warrior/src/MainMenu/MainMenu.h
  C:/Projects/note-warrior/src/Octagon/Note/Note.h
  C:/Projects/note-warrior/src/Octagon/Octagon.h
+ C:/Projects/note-warrior/src/States/Game/Game.h
+ C:/Projects/note-warrior/src/States/MainMenu/MainMenu.h
  C:/Projects/note-warrior/src/main.cpp
  C:/Projects/note-warrior/src/main.h
