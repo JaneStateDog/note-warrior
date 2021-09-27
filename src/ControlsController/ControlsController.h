@@ -1,8 +1,6 @@
 #ifndef NOTE_WARRIOR_CONTROLSCONTROLLER_H
 #define NOTE_WARRIOR_CONTROLSCONTROLLER_H
 
-#include "raylib.h"
-
 
 namespace Controls {
     extern bool KeyUp;
@@ -16,6 +14,13 @@ namespace Controls {
     extern bool KeyRightPressed;
 
     extern bool KeyEnterPressed;
+
+    extern bool MouseLeftPressed;
+    extern bool MouseRightPressed;
+
+    extern float MouseWheelMovement;
+
+    extern bool F11Pressed;
 
 
     void Update();

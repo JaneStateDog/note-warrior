@@ -1,5 +1,11 @@
 #include "MainMenu.h"
 
+#include "raylib.h"
+#include <string>
+
+#include "../../ControlsController/ControlsController.h"
+#include "../../main.h"
+
 
 void MainMenu::Update() {
     if (Controls::KeyUpPressed) { selected--; }
@@ -12,11 +18,11 @@ void MainMenu::Update() {
     if (Controls::KeyEnterPressed) {
         switch (selected) {
             case Game:
-                state = States::Game;
+                //state = States::Game;
                 break;
 
             case Editor:
-                //state = States::Editor;
+                state = States::Editor;
                 break;
 
             case Quit:
@@ -29,6 +35,7 @@ void MainMenu::Update() {
 void MainMenu::Render() {
     BeginDrawing();
     ClearBackground(BLACK);
+    BeginMode2D(camera);
 
 
     int i = 0;
@@ -60,5 +67,6 @@ void MainMenu::Render() {
     }
 
 
+    EndMode2D();
     EndDrawing();
 }

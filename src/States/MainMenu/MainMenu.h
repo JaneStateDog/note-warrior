@@ -1,12 +1,7 @@
 #ifndef NOTE_WARRIOR_MAINMENU_H
 #define NOTE_WARRIOR_MAINMENU_H
 
-#include "raylib.h"
-#include <string>
 #include <vector>
-
-#include "../../main.h"
-#include "../../ControlsController/ControlsController.h"
 
 
 class MainMenu {

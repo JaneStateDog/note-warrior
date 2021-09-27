@@ -2,10 +2,10 @@
 #define NOTE_WARRIOR_FUNCTIONS_H
 
 #include "raylib.h"
-#include <cmath>
 
 
 Vector2 Lengthdir(float angle, float length);
+float ValueFromTwoRanges(float oldMin, float oldMax, float inputValue, float newMin, float newMax);
 
 
 #endif //NOTE_WARRIOR_FUNCTIONS_H

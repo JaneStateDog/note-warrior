@@ -1,5 +1,14 @@
 #include "Octagon.h"
 
+#include "../Functions/Functions.h"
+#include "../ControlsController/ControlsController.h"
+#include "../main.h"
+
+
+Octagon::Octagon(Vector2 inPos, int inSize, int inSides)
+    : pos(inPos), size(inSize), sides(inSides)
+{}
+
 
 void Octagon::SetPos(Vector2 inPos) { pos = inPos; }
 Vector2 Octagon::GetPos() { return pos; }
@@ -10,6 +19,8 @@ int Octagon::GetSize() const { return size; }
 int Octagon::GetSelectedSide() const { return selSide; }
 
 int Octagon::GetSides() const { return sides; }
+
+void Octagon::SetFlashing(bool inFlashing) { flashing = inFlashing; }
 
 
 void Octagon::Update() {
@@ -24,17 +35,17 @@ void Octagon::Update() {
     else if (selSide > sides - 1) { selSide = 0; }
 
 
+    if (flashing) {
+        flashCounter++;
 
-    //This creates a note
-    //notes.emplace_back(0, 10, this);
-
-    //Update notes
-    for (auto & note : notes) {
-        note.Update();
+        if (flashCounter >= 5) {
+            flashing = false;
+            flashCounter = 0;
+        }
     }
 }
 
-void Octagon::Render() const {
+void Octagon::Render(bool guideLines) const {
     int lastX;
     int lastY;
 
@@ -46,21 +57,35 @@ void Octagon::Render() const {
         lastX = newX;
         lastY = newY;
 
-        Vector2 t2 = Lengthdir((float) ((360.f / (float)sides) * (float)i), (float) size);
+        Vector2 t2 = Lengthdir((float) ((360.f / (float)sides) * (float)i), (float)size);
         newX = (int)t2.x;
         newY = (int)t2.y;
 
         Color color = WHITE;
 
-        if (selSide + 1 == i) { color = RED; }
+        if (selSide + 1 == i) { color = GREEN; }
+        else if (flashing) { color = RED; }
 
         DrawLine((int)pos.x + lastX, (int)pos.y + lastY,
                     (int)pos.x + newX, (int)pos.y + newY,
                         color);
-    }
 
-    //Render notes
-    for (auto & note : notes) {
-        note.Render();
+        if (guideLines) {
+            bool flipper = false;
+
+            Vector2 t3 = Lengthdir((float)((360.f / (float)sides) * (float)i) - (360.f / (float)sides), editor.GetScrollSpeed());
+            Vector2 lastPos = {pos.x + (float)lastX, pos.y + (float)lastY};
+
+            for (int b = 0; b < (int)(screenSize.x / camera.zoom); b++) {
+                Color color2;
+                if (flipper) { color2 = WHITE; } else { color2 = GRAY; }
+                DrawLine((int)lastPos.x, (int)lastPos.y,
+                            (int)(lastPos.x + t3.x), (int)(lastPos.y + t3.y),
+                            color2);
+
+                flipper = !flipper;
+                lastPos = {lastPos.x+ t3.x, lastPos.y + t3.y};
+            }
+        }
     }
 }

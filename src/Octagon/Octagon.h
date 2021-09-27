@@ -2,14 +2,7 @@
 #define NOTE_WARRIOR_OCTAGON_H
 
 #include "raylib.h"
-#include <vector>
 
-#include "../Functions/Functions.h"
-#include "../ControlsController/ControlsController.h"
-#include "Note/Note.h"
-
-
-class Note;
 
 class Octagon {
 private:
@@ -21,14 +14,11 @@ private:
 
     bool moveFlipper = false;
 
+    bool flashing = false;
+    int flashCounter = 0;
+
 public:
-    std::vector<Note> notes;
-
-
-    Octagon() = default;
-    Octagon(Vector2 inPos, int inSize, int inSides)
-        : pos(inPos), size(inSize), sides(inSides)
-    {}
+    Octagon(Vector2 inPos, int inSize, int inSides);
 
 
     void SetPos(Vector2 inPos);
@@ -41,9 +31,11 @@ public:
 
     int GetSides() const;
 
+    void SetFlashing(bool inFlashing);
+
 
     void Update();
-    void Render() const;
+    void Render(bool editor = false) const;
 };
 
 

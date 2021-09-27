@@ -1,39 +1,53 @@
 #include "main.h"
 
+#include "ControlsController/ControlsController.h"
 
-//Global variables
-Vector2 winSize = {800, 450};
+
+Vector2 screenSize = {640, 360};
+Camera2D camera;
+Camera2D UICamera;
 
 
 States::states state = States::MainMenu;
 
 MainMenu mainMenu;
-Game game(winSize);
+//Game game;
+Editor editor;
+
+
+int standardOctagonSize = 36;
 
 
 int main() {
-    InitWindow((int)winSize.x, (int)winSize.y, "note-warrior");
+    float winResizeMultiplier = 2.5f;
+
+    InitWindow((int)(screenSize.x * winResizeMultiplier), (int)(screenSize.y * winResizeMultiplier),
+                "note-warrior");
+
+    camera.offset = {(screenSize.x * winResizeMultiplier) / 2, (screenSize.y * winResizeMultiplier) / 2};
+    camera.target = {screenSize.x / 2, screenSize.y / 2};
+    camera.zoom = winResizeMultiplier;
+
+    UICamera.zoom = winResizeMultiplier;
+
     SetTargetFPS(30);
 
     while (!WindowShouldClose()) {
         Controls::Update();
 
+
+        //Updates
         switch (state) {
-            case States::MainMenu:
-                mainMenu.Update();
-                mainMenu.Render();
+            case States::MainMenu: mainMenu.Update(); break;
+            case States::Game: /*game.Update();*/ break;
+            case States::Editor: editor.Update(); break;
+        }
 
-                break;
-
-            case States::Game:
-                game.Update();
-                game.Render();
-
-                break;
-
-            case States::Editor:
-
-                break;
+        //Renders
+        switch (state) {
+            case States::MainMenu: mainMenu.Render(); break;
+            case States::Game: /*game.Render();*/ break;
+            case States::Editor: editor.Render(); break;
         }
     }
 

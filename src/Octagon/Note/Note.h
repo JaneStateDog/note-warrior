@@ -3,34 +3,35 @@
 
 #include "raylib.h"
 
-#include "../../Functions/Functions.h"
-#include "../Octagon.h"
-
-
-class Octagon;
 
 class Note {
-private:
+protected:
     int side;
     int size;
 
-    float distance = 400; //Distance to center of octagon
+    float distance; //Distance to center of octagon
 
-    Octagon* parentOctagon;
+    Color color = ORANGE;
+
+    float hitTime;
 
 public:
-    Note(int inSide, int inSize, Octagon* inParentOctagon)
-        : side(inSide), size(inSize), parentOctagon(inParentOctagon)
-    {}
+    Note(int inSide, int inSize, float inHitTime, float inDistance);
 
 
     void SetSide(int inSide);
+    int GetSide() const;
+
     void SetSize(int inSize);
+    int GetSize() const;
 
     void SetDistance(float inDistance);
+    float GetDistance() const;
+
+    float GetHitTime() const;
 
 
-    void Update();
+    virtual void Update();
     void Render() const;
 };
 

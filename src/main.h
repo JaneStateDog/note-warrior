@@ -3,16 +3,19 @@
 
 #include "raylib.h"
 
-#include "ControlsController/ControlsController.h"
 #include "States/MainMenu/MainMenu.h"
-#include "States/Game/Game.h"
+//#include "States/Game/Game.h"
+#include "States/Editor/Editor.h"
 
 
 class MainMenu;
-class Game;
+//class Game;
+class Editor;
 
 
-extern Vector2 winSize;
+extern Vector2 screenSize;
+extern Camera2D camera;
+extern Camera2D UICamera;
 
 
 namespace States {
@@ -27,7 +30,11 @@ extern States::states state;
 
 
 extern MainMenu mainMenu;
-extern Game game;
+//extern Game game;
+extern Editor editor;
+
+
+extern int standardOctagonSize;
 
 
 #endif //NOTE_WARRIOR_MAIN_H

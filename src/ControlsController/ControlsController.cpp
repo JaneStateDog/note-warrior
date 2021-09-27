@@ -1,5 +1,7 @@
 #include "ControlsController.h"
 
+#include "raylib.h"
+
 
 namespace Controls {
     bool KeyUp = false;
@@ -14,6 +16,13 @@ namespace Controls {
 
     bool KeyEnterPressed = false;
 
+    bool MouseLeftPressed = false;
+    bool MouseRightPressed = false;
+
+    float MouseWheelMovement = 0;
+
+    bool F11Pressed = false;
+
 
     void Update() {
         KeyUp = (IsKeyDown(KEY_W) || IsKeyDown(KEY_UP));
@@ -27,5 +36,12 @@ namespace Controls {
         KeyRightPressed = (IsKeyPressed(KEY_D) || IsKeyPressed(KEY_RIGHT));
 
         KeyEnterPressed = (IsKeyPressed(KEY_ENTER) || IsKeyPressed(KEY_SPACE));
+
+        MouseLeftPressed = IsMouseButtonPressed(MOUSE_LEFT_BUTTON);
+        MouseRightPressed = IsMouseButtonPressed(MOUSE_RIGHT_BUTTON);
+
+        MouseWheelMovement = GetMouseWheelMove();
+
+        F11Pressed = IsKeyPressed(KEY_F11);
     }
 }
