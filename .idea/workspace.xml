@@ -11,25 +11,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bbd2c9d-2798-4e6a-9c63-50826b43f8ed" name="Changes" comment="Gitignore">
-      <change afterPath="$PROJECT_DIR$/src/Octagon/Note/MappingNote/MappingNote.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Octagon/Note/MappingNote/MappingNote.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/States/Editor/Editor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/States/Editor/Editor.h" afterDir="false" />
+    <list default="true" id="7bbd2c9d-2798-4e6a-9c63-50826b43f8ed" name="Changes" comment="Big update, added editor and such">
+      <change afterPath="$PROJECT_DIR$/test.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ControlsController/ControlsController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControlsController/ControlsController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ControlsController/ControlsController.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControlsController/ControlsController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/Functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/Functions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Functions/Functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Functions/Functions.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Octagon/Note/Note.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Octagon/Note/Note.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Octagon/Note/Note.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Octagon/Note/Note.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Octagon/Octagon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Octagon/Octagon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Octagon/Octagon.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Octagon/Octagon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/States/Game/Game.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/States/Game/Game.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/States/MainMenu/MainMenu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/MainMenu/MainMenu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/States/MainMenu/MainMenu.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/MainMenu/MainMenu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Octagon/Note/MappingNote/MappingNote.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polygon/Note/MappingNote/MappingNote.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Octagon/Note/MappingNote/MappingNote.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polygon/Note/MappingNote/MappingNote.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Octagon/Note/Note.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polygon/Note/Note.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Octagon/Note/Note.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polygon/Note/Note.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Octagon/Octagon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polygon/Polygon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Octagon/Octagon.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Polygon/Polygon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/States/Editor/Editor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/Editor/Editor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/States/Editor/Editor.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/Editor/Editor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.h" afterDir="false" />
     </list>
@@ -75,6 +68,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\note-warrior\src\Polgyon" />
       <recent name="C:\Projects\note-warrior\src\States" />
       <recent name="C:\Projects\note-warrior\src\Octagon" />
       <recent name="C:\Projects\note-warrior\src\Functions" />
@@ -89,11 +83,6 @@
     <configuration name="note-warrior" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="note-warrior" TARGET_NAME="note-warrior" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="note-warrior" RUN_TARGET_NAME="note-warrior">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -114,7 +103,12 @@
       <workItem from="1632623930748" duration="6000" />
       <workItem from="1632624013474" duration="91000" />
       <workItem from="1632625036901" duration="7151000" />
-      <workItem from="1632675759577" duration="22719000" />
+      <workItem from="1632675759577" duration="22750000" />
+      <workItem from="1632768496305" duration="5198000" />
+      <workItem from="1632854675333" duration="71000" />
+      <workItem from="1632854750109" duration="632000" />
+      <workItem from="1632936132601" duration="2779000" />
+      <workItem from="1634835320683" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="First commit. I forget to commit earlier so sorry about that. Right now it can spawn notes and block lol">
       <created>1632615303526</created>
@@ -165,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632624092290</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Big update, added editor and such">
+      <created>1632708371671</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1632708371671</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +190,8 @@
     <MESSAGE value="Test" />
     <MESSAGE value="Organization" />
     <MESSAGE value="Gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gitignore" />
+    <MESSAGE value="Big update, added editor and such" />
+    <option name="LAST_COMMIT_MESSAGE" value="Big update, added editor and such" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

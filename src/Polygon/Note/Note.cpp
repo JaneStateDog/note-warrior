@@ -24,7 +24,7 @@ void Note::Update() {
     distance -= editor.GetScrollSpeed();
 
     if (distance <= 0) {
-        if (editor.GetOctagon()->GetSelectedSide() != side) { editor.GetOctagon()->SetFlashing(true); }
+        if (editor.GetPolygon()->GetSelectedSide() != side) { editor.GetPolygon()->SetFlashing(true); }
 
         if (distance < editor.GetScrollSpeed() - (float)size) {
             int p = 0;
@@ -41,8 +41,8 @@ void Note::Update() {
 }
 
 void Note::Render() const {
-    int sides = editor.GetOctagon()->GetSides();
-    auto octSize = (float)editor.GetOctagon()->GetSize();
+    int sides = editor.GetPolygon()->GetSides();
+    auto octSize = (float)editor.GetPolygon()->GetSize();
 
     for (int i = 1; i <= size * 2; i++) {
         float initAngle = (360.f / (float)sides);
@@ -60,7 +60,7 @@ void Note::Render() const {
         Vector2 offset2 = Lengthdir(angle2, octSize);
 
 
-        Vector2 spawnPoint = editor.GetOctagon()->GetPos();
+        Vector2 spawnPoint = editor.GetPolygon()->GetPos();
         DrawLine((int)spawnPoint.x + (int)t1.x + (int)offset1.x, (int)spawnPoint.y + (int)t1.y + (int)offset1.y,
                  (int)spawnPoint.x + (int)t2.x + (int)offset2.x, (int)spawnPoint.y + (int)t2.y + (int)offset2.y,
                  color);

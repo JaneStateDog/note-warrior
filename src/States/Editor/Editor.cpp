@@ -2,6 +2,10 @@
 
 #include "raylib.h"
 #include <string>
+#include <cmath>
+#include <fstream>
+#include <iostream>
+#include <string>
 
 #include "../../Functions/Functions.h"
 #include "../../ControlsController/ControlsController.h"
@@ -9,14 +13,14 @@
 
 
 Editor::Editor()
-    : octagon(Octagon({screenSize.x / 2.f, screenSize.y / 2.f}, standardOctagonSize, 8))
+    : polygon(Polygon({screenSize.x / 2.f, screenSize.y / 2.f}, standardPolygonSize, 8))
 {}
 
 
 std::vector<Note>* Editor::GetNotes() { return &notes; }
 std::vector<MappingNote>* Editor::GetMappingNotes() { return &mappingNotes; }
 
-Octagon* Editor::GetOctagon() { return &octagon; }
+Polygon* Editor::GetPolygon() { return &polygon; }
 
 float Editor::GetSongLength() const { return songLength; }
 float Editor::GetSongTime() const { return songTime; }
@@ -25,13 +29,17 @@ float Editor::GetScrollSpeed() const { return scrollSpeed; }
 
 
 void Editor::Update() {
+    mouseSongTime = songTime + (std::round(polygon.GetDistanceOfMouse() / scrollSpeed) / (float)GetFPS());
+
     if (!playing) {
         if (Controls::MouseLeftPressed) {
-            mappingNotes.emplace_back(octagon.GetSelectedSide(), 8, songTime,0);
+            mappingNotes.emplace_back(polygon.GetSideOfMouse(), 8, mouseSongTime,0);
         } else if (Controls::MouseRightPressed) {
             int p = 0;
             for (auto & note : mappingNotes) {
-                if (note.GetHitTime() == songTime && note.GetSide() == octagon.GetSelectedSide()) {
+                if ((mouseSongTime < note.GetHitTime() + (scrollSpeed / (float)GetFPS()) &&
+                        mouseSongTime > note.GetHitTime() - (scrollSpeed / (float)GetFPS())) &&
+                        note.GetSide() == polygon.GetSideOfMouse()) {
                     mappingNotes.erase(mappingNotes.begin() + p);
                     break;
                 }
@@ -54,7 +62,7 @@ void Editor::Update() {
         for (auto & note : notes) { note.Update(); }
     }
 
-    octagon.Update();
+    polygon.Update();
 
 
     if (Controls::KeyEnterPressed) {
@@ -79,25 +87,42 @@ void Editor::Update() {
 
     if (camera.zoom <= 0.5) { camera.zoom = 0.5; }
     else if (camera.zoom > 6) { camera.zoom = 6; }
+
+
+    if (Controls::F11Pressed) {
+        std::string path = "C:/Projects/note-warrior/test.json";
+        std::ofstream stream(path.c_str());
+
+        std::string data;
+        data = "{\n";
+
+        bool first = true;
+        for (auto & note : mappingNotes) {
+            if (!first) { data += ",\n"; }
+            if (first) { first = false; }
+
+            data += "   ";
+            data += '"';
+            data += std::to_string(note.GetHitTime());
+            data += '"';
+            data += ": ";
+
+            data += "[";
+            data += std::to_string(note.GetSide());
+            data += ",";
+            data += std::to_string(note.GetSize());
+            data += "]";
+        }
+
+        stream << data << "\n}";
+
+        std::cout << "Sending" << std::endl;
+    }
 }
 
 void Editor::Render() {
     BeginDrawing();
     ClearBackground(BLACK);
-
-
-    //UI
-    BeginMode2D(UICamera);
-
-    Color timeBarColor = BLUE;
-    if (playing) { timeBarColor = ORANGE; }
-    DrawLine(12, 12,
-             (int)(screenSize.x - ValueFromTwoRanges(0, songLength, songTime, 12, screenSize.x - 12)),
-             12, timeBarColor);
-
-    DrawText((std::to_string(songTime) + "/" + std::to_string(songLength)).c_str(), 12, 18, 20, WHITE);
-
-    EndMode2D();
 
 
     //World space
@@ -113,7 +138,22 @@ void Editor::Render() {
         }
     }
 
-    octagon.Render(!playing);
+    polygon.Render(!playing);
+
+    EndMode2D();
+
+
+    //UI
+    BeginMode2D(UICamera);
+
+    Color timeBarColor = BLUE;
+    if (playing) { timeBarColor = ORANGE; }
+    DrawLine(12, 12,
+             (int)(screenSize.x - ValueFromTwoRanges(0, songLength, songTime, 12, screenSize.x - 12)),
+             12, timeBarColor);
+
+    DrawText((std::to_string(songTime) + "/" + std::to_string(songLength)).c_str(), 12, 18, 20, WHITE);
+    DrawText(("Mouse song time:" + std::to_string(mouseSongTime)).c_str(), 12, 36, 20, WHITE);
 
     EndMode2D();
 

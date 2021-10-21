@@ -1,29 +1,34 @@
-#include "Octagon.h"
+#include "Polygon.h"
+
+#include <cmath>
 
 #include "../Functions/Functions.h"
 #include "../ControlsController/ControlsController.h"
 #include "../main.h"
 
 
-Octagon::Octagon(Vector2 inPos, int inSize, int inSides)
+Polygon::Polygon(Vector2 inPos, int inSize, int inSides)
     : pos(inPos), size(inSize), sides(inSides)
 {}
 
 
-void Octagon::SetPos(Vector2 inPos) { pos = inPos; }
-Vector2 Octagon::GetPos() { return pos; }
+void Polygon::SetPos(Vector2 inPos) { pos = inPos; }
+Vector2 Polygon::GetPos() { return pos; }
 
-void Octagon::SetSize(int inSize) { size = inSize; }
-int Octagon::GetSize() const { return size; }
+void Polygon::SetSize(int inSize) { size = inSize; }
+int Polygon::GetSize() const { return size; }
 
-int Octagon::GetSelectedSide() const { return selSide; }
+int Polygon::GetSelectedSide() const { return selSide; }
 
-int Octagon::GetSides() const { return sides; }
+int Polygon::GetSides() const { return sides; }
 
-void Octagon::SetFlashing(bool inFlashing) { flashing = inFlashing; }
+void Polygon::SetFlashing(bool inFlashing) { flashing = inFlashing; }
+
+int Polygon::GetSideOfMouse() const { return sideOfMouse; }
+float Polygon::GetDistanceOfMouse() const { return distanceOfMouse; }
 
 
-void Octagon::Update() {
+void Polygon::Update() {
     if (moveFlipper) {
         if (Controls::KeyLeft) { selSide--; }
         else if (Controls::KeyRight) { selSide++; }
@@ -43,9 +48,27 @@ void Octagon::Update() {
             flashCounter = 0;
         }
     }
+
+
+    //Get side of mouse and distance of mouse
+    Vector2 mousePos = GetScreenToWorld2D(GetMousePosition(), camera);
+    float initAngle = 360.f / (float)sides;
+
+
+    double roughDegrees = std::atan2(mousePos.y - pos.y, mousePos.x - pos.x) * (180.f / M_PI);
+    if (roughDegrees < 0) { roughDegrees += 360; }
+    sideOfMouse = (int)(roughDegrees / initAngle);
+
+
+    Vector2 t1 = Lengthdir((float)(initAngle * (float)sideOfMouse) + (initAngle / 2), float(size));
+    t1 = {pos.x + t1.x, pos.y + t1.y};
+
+    distanceOfMouse = (float)sqrt(pow((t1.x - mousePos.x), 2) + pow((t1.y - mousePos.y) , 2));
+
+    selSide = sideOfMouse;
 }
 
-void Octagon::Render(bool guideLines) const {
+void Polygon::Render(bool guideLines) const {
     int lastX;
     int lastY;
 
@@ -57,7 +80,7 @@ void Octagon::Render(bool guideLines) const {
         lastX = newX;
         lastY = newY;
 
-        Vector2 t2 = Lengthdir((float) ((360.f / (float)sides) * (float)i), (float)size);
+        Vector2 t2 = Lengthdir((float)((360.f / (float)sides) * (float)i), (float)size);
         newX = (int)t2.x;
         newY = (int)t2.y;
 
@@ -73,7 +96,7 @@ void Octagon::Render(bool guideLines) const {
         if (guideLines) {
             bool flipper = false;
 
-            Vector2 t3 = Lengthdir((float)((360.f / (float)sides) * (float)i) - (360.f / (float)sides), editor.GetScrollSpeed());
+            Vector2 t3 = Lengthdir((float)((360.f / (float)sides) * (float)i) - (360.f / (float)sides), editor.GetScrollSpeed() * 2);
             Vector2 lastPos = {pos.x + (float)lastX, pos.y + (float)lastY};
 
             for (int b = 0; b < (int)(screenSize.x / camera.zoom); b++) {

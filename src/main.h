@@ -34,7 +34,7 @@ extern MainMenu mainMenu;
 extern Editor editor;
 
 
-extern int standardOctagonSize;
+extern int standardPolygonSize;
 
 
 #endif //NOTE_WARRIOR_MAIN_H

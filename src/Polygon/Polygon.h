@@ -1,10 +1,10 @@
-#ifndef NOTE_WARRIOR_OCTAGON_H
-#define NOTE_WARRIOR_OCTAGON_H
+#ifndef NOTE_WARRIOR_POLYGON_H
+#define NOTE_WARRIOR_POLYGON_H
 
 #include "raylib.h"
 
 
-class Octagon {
+class Polygon {
 private:
     Vector2 pos;
     int size;
@@ -17,8 +17,11 @@ private:
     bool flashing = false;
     int flashCounter = 0;
 
+    int sideOfMouse = 0;
+    float distanceOfMouse = 0;
+
 public:
-    Octagon(Vector2 inPos, int inSize, int inSides);
+    Polygon(Vector2 inPos, int inSize, int inSides);
 
 
     void SetPos(Vector2 inPos);
@@ -33,10 +36,13 @@ public:
 
     void SetFlashing(bool inFlashing);
 
+    int GetSideOfMouse() const;
+    float GetDistanceOfMouse() const;
+
 
     void Update();
     void Render(bool editor = false) const;
 };
 
 
-#endif //NOTE_WARRIOR_OCTAGON_H
+#endif //NOTE_WARRIOR_POLYGON_H

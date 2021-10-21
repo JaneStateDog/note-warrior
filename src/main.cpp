@@ -15,7 +15,7 @@ MainMenu mainMenu;
 Editor editor;
 
 
-int standardOctagonSize = 36;
+int standardPolygonSize = 36;
 
 
 int main() {

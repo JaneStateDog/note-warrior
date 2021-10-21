@@ -10,6 +10,6 @@ MappingNote::MappingNote(int inSide, int inSize, float inHitTime, float inDistan
 
 
 void MappingNote::Update() {
-    distance = ((hitTime * (float)GetFPS() * editor.GetScrollSpeed()) - ((editor.GetSongTime() *
-                (float)GetFPS()) * editor.GetScrollSpeed()));
+    distance = (hitTime * (float)GetFPS() * editor.GetScrollSpeed()) - ((editor.GetSongTime() *
+                (float)GetFPS()) * editor.GetScrollSpeed());
 }

@@ -3,16 +3,16 @@
 
 #include <vector>
 
-#include "../../Octagon/Octagon.h"
-#include "../../Octagon/Note/Note.h"
-#include "../../Octagon/Note/MappingNote/MappingNote.h"
+#include "../../Polygon/Polygon.h"
+#include "../../Polygon/Note/Note.h"
+#include "../../Polygon/Note/MappingNote/MappingNote.h"
 
 
 class MappingNote;
 
 class Editor {
 private:
-    Octagon octagon;
+    Polygon polygon;
 
     std::vector<Note> notes;
     std::vector<MappingNote> mappingNotes;
@@ -25,6 +25,8 @@ private:
 
     float scrollSpeed = 3;
 
+    float mouseSongTime = 0;
+
 public:
     Editor();
 
@@ -32,7 +34,7 @@ public:
     std::vector<Note>* GetNotes();
     std::vector<MappingNote>* GetMappingNotes();
 
-    Octagon* GetOctagon();
+    Polygon* GetPolygon();
 
     float GetSongLength() const;
     float GetSongTime() const;

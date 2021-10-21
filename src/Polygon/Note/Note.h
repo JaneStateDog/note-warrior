@@ -9,7 +9,7 @@ protected:
     int side;
     int size;
 
-    float distance; //Distance to center of octagon
+    float distance; //Distance to center of polygon
 
     Color color = ORANGE;
 
